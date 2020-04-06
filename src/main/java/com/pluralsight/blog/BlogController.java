@@ -13,8 +13,8 @@ public class BlogController {
 
     private PostRepository postRepository;
 
-    public BlogController(PostRepository p) {
-        this.postRepository = p;
+    public BlogController(PostRepository postRepository) {
+        this.postRepository = postRepository;
     }
 
     @RequestMapping("/")

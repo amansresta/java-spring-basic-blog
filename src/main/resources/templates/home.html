@@ -9,6 +9,11 @@
 </head>
 <body>
     <div th:replace="header :: header">...</div>
+    <div th:each="entry : ${posts}">
+        <h2 th:text="${entry.getTitle()}"></h2>
+    </div>
+
+
     <main role="main" class="py-5 flex-fill">
         <div class="container">
             <div class="row">
